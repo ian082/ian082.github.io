@@ -255,6 +255,7 @@ header {
 }
 
 .wrapper .button .icon i{
+    color: black;
     font-size: 25px;
     line-height: 60px;
     transition: all 0.3s ease-out;
@@ -311,6 +312,7 @@ header {
 }
 
 .wrapper2 .button2 .icon2 i{
+    color: black;
     font-size: 25px;
     line-height: 60px;
     transition: all 0.3s ease-out;
