@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Google Sans Regular';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    border-bottom: solid 2px;
+    border-color: goldenrod;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    padding-top: 12px;
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: goldenrod;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background: goldenrod;
+}
+
+.nav-bar ul li a.active {
+    color: black;
+    background: goldenrod;
+}
+
+.container3 {
+    max-width: 1266px;
+    margin: 0 auto;
+}
+
+.home-text {
+    color: goldenrod;
+    margin-top: 200px;
+}
+
+.home-text h5 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+.home-text h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+.home-text p {
+    max-width: 600px;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+.home-text .name span {
+    margin-right: 100px;
+    display: inline-block;;
+}
+
+.home-text .name span:last-child {
+    margin-right: 0;
+} 
+
+.hello span, .name span, .small-intro span, .button, .wrapper2, .progress-bar{
+    opacity: 0;
+}
+
+.container2 {
+    display: none;
+    margin: 0 auto;
+}
+
+.home-text2 {
+    color: goldenrod;
+    margin-top: 200px;
+}
+
+.home-text2 .hello2 {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 20px;
+}
+
+.home-text2 h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+.home-text2 p {
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: goldenrod;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: black;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 400px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin-top: 80px;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+    
+    .container2 {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 100px;
+    }
+
+    .small-intro2 {
+        padding-top: 40px;
+    }
+
+    .container3 {
+        display: none;
+    }
+
+    .wrapper {
+        display: none;
+    }
+
+    .wrapper2 {
+        display: block;
+    }
+    
+}
+
+.wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: goldenrod;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover{
+    width: 200px;
+}
+
+.wrapper .button .icon{
+    color: black;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1):hover .icon{
+    background: goldenrod;
+}
+
+.wrapper .button:nth-child(2):hover .icon{
+    background: goldenrod;
+}
+
+.wrapper .button:nth-child(3):hover .icon{
+    background: goldenrod;
+}
+
+.wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:hover .icon i{
+    color: black;
+}
+
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper .button:nth-child(1) span{
+    color: black;
+}
+
+.wrapper .button:nth-child(2) span{
+    color: black;
+}
+
+.wrapper .button:nth-child(3) span{
+    color: black;
+}
+
+.wrapper2 {
+    margin-top: 50px;
+}
+
+.wrapper2 .button2{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: goldenrod;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.wrapper2 .button2 .icon2{
+    color: black;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+
+.wrapper2 .button2 .icon2 i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.about-section p {
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.about-section h2 {
+    text-transform: uppercase;
+    color: goldenrod;    
+}
+
+.contant-section h3 {
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.contant-section p {
+    color: goldenrod;
+    font-size: 20px;
+}
+
+.btn {
+    width: 100px;
+    background-color: goldenrod;
+    font-weight: bold;
+    color: black;
+}
+
+.btn:hover {
+    background-color: black;
+    font-weight: bold;
+    color: goldenrod;
+}
+
+hr {
+    color: goldenrod;
+}
+
+.progress-bar {
+    background-color: goldenrod;
+}
+
+.skills-section span {
+    font-size: 20px;
+    color: goldenrod;
+}
+
+.timeline {
+    border-left: 2px solid #E6E9ED;
+    padding: 1rem 0; 
+}
+  
+.timeline-card {
+    color: black;
+    font-size: 15px;
+    background-color: goldenrod;
+    position: relative;
+    margin-left: 31px;
+    border-left: 2px solid;
+    margin-bottom: 2rem; 
+}
+
+.timeline-card:last-child {
+    margin-bottom: 1rem; 
+}
+
+.timeline-card:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: goldenrod;
+    border-radius: 10px;
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    left: -41px;
+    border: 2px solid;
+    z-index: 2; 
+}
+
+.timeline-card:after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-color: currentColor;
+    width: 29px;
+    height: 2px;
+    top: 25px;
+    left: -29px;
+    z-index: 1; 
+}
+
+.timeline-card-primary {
+    border-left-color: goldenrod; 
+}
+
+.timeline-card-primary:before {
+    border-color: goldenrod; 
+}
+
+.timeline-card-primary:after {
+    background-color: goldenrod; 
+}
+
+.timeline-card-success {
+    border-left-color: goldenrod; 
+}
+
+.timeline-card-success:before {
+    border-color: goldenrod; 
+}
+
+.timeline-card-success:after {
+    background-color: goldenrod; 
+}
+
+.projects-section {
+    font-size: 20px;
+    color: goldenrod;
+}
+
+footer {
+    color: goldenrod;
+}
